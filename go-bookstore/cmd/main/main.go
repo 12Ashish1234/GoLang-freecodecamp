@@ -19,6 +19,6 @@ func main() {
 	r := mux.NewRouter()
 	routes.RegisterBookStoreRoutes(r)
 	http.Handle("/", r)
-	// http.ListenAndServe() helps create the server in mentioned port. in this example localhost:9010
+	// http.ListenAndServe() helps create the server in mentioned port. In this example localhost:9010
 	log.Fatal(http.ListenAndServe("localhost:9010", r))
 }
